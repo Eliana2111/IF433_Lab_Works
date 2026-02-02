@@ -6,6 +6,7 @@ fun main () {
 
     println("Game Title: $gameTitle")
     calculatediscount(price)
+    printReceipt(title = gameTitle)
 }
 
 fun calculatediscount(price: Int){
@@ -14,4 +15,8 @@ fun calculatediscount(price: Int){
    }  else {
          println("Price: ${price - (price * 0.2)}")
    }
+}
+
+fun printReceipt(title: String, finalprice: Int) {
+    println(title)
 }
