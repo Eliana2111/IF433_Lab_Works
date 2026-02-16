@@ -9,4 +9,4 @@ fun main() {
     e.increasePerformance()
 
     println("Pajak yang harus dibayar ${e.tax}")
-}
+} // karena ga bisa commit sama kyk sebelumnya
