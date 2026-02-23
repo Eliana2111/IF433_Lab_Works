@@ -1,4 +1,4 @@
-package ` oop_136309_FeliciaAuliaSuherman`.week02
+package oop_136309_FeliciaAulia.week02
 
 import java.util.Scanner
 

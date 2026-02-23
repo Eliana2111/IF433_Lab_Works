@@ -1,4 +1,4 @@
-package ` oop_136309_FeliciaAuliaSuherman`.week02.tugas_mandiri_2
+package oop_136309_FeliciaAulia.week02.tugas_mandiri_2
 
 class Hero (val name: String, var hp: Int, val baseDamage: Int) {
     constructor(name: String, baseDamage: Int) : this(name, hp = 100, baseDamage)

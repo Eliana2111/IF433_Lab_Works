@@ -1,4 +1,4 @@
-package ` oop_136309_FeliciaAuliaSuherman`.week02
+package oop_136309_FeliciaAulia.week02
 
 class Student (val name: String, val nim: String, var major: String, var gpa: Double = 0.0) {
     init {

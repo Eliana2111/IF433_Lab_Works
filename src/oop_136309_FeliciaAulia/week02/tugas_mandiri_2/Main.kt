@@ -1,4 +1,4 @@
-package ` oop_136309_FeliciaAuliaSuherman`.week02.tugas_mandiri_2
+package oop_136309_FeliciaAulia.week02.tugas_mandiri_2
 
 import java.util.Scanner
 
