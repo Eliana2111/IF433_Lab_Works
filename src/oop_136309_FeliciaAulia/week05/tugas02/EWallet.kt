@@ -1,6 +1,6 @@
 package oop_136309_FeliciaAulia.week05.tugas02
 
-class EWallet(var balance: Double) : PaymentMethod(accountName = "EWallet") {
+class EWallet(var balance: Double) : PaymentMethod("EWallet") {
     override fun processPayment(amount : Double) {
         if (balance > amount) {
             balance -= amount
