@@ -40,15 +40,13 @@ fun main(){
 
     val safeString = someObject as? String ?: "Unknown String"
     println("Hasil cast + fallback: $safeString")
+
+    println("\n=== TEST THE RED BUTTON (!!) ===")
+    val toxicData: String? = null
+    try{
+        val lenght = toxicData!!.length
+    } catch (e: NullPointerException) {
+        println("CRASH (NPE)! Jangan gunakan !! secara sembarangan.")
+    }
 }
-/*output:
-=== TEST SAFE CALLS & ELVIS ===
-Tujuan pengirim: Kota Tidak Diketahui
 
-=== TEST LET BLOCK ===
-Transaksi Valid. Harga: Rp250000, Pajak: Rp27500.0
-
-=== TEST SAFE CASTING ===
-Ditemukan teks: SMARTPHONE
-Ditemukan teks: LAPTOP
-Hasil cast + fallback: Unknown String*/
