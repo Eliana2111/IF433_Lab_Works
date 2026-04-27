@@ -1,6 +1,7 @@
 package oop_136309_FeliciaAulia.week10
 
-class WalletRepository<T> {
+
+class WalletRepository<T : Any> {
 
     private val items = mutableListOf<T>()
 
@@ -10,5 +11,11 @@ class WalletRepository<T> {
 
     fun getAll(): List<T> {
         return items
+    }
+
+    fun searchByName(keyword: String): List<T> {
+        return items.filter {
+            it is Coin && it.name.contains(keyword, ignoreCase = true)
+        }
     }
 }
