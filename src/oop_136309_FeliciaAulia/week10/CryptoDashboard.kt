@@ -11,6 +11,8 @@ fun main() {
 
     println("Status: ${response.status}")
 
+    println()
+    println("=== COIN WALLET ===")
     response.data.forEach {
         println("Coin: ${it.name}, Balance: ${it.balance}")
     }
@@ -20,4 +22,10 @@ fun main() {
     txRepo.add(Transaction("TX001", 500000.0))
     txRepo.add(Transaction("TX002", 250000.0))
     txRepo.add(Transaction("TX003", 1000000.0))
+
+    println("\n=== TRANSACTION HISTORY ===")
+
+    txRepo.getAll().forEach {
+        println("ID: ${it.id}, Amount: ${it.amount}")
+    }
 }
