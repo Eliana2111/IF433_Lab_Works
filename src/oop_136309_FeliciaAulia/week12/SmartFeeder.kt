@@ -9,5 +9,14 @@ fun dispenseKibble(requestedGram: Int, availableGram: Int, isJammed: Boolean): I
         throw FeederExceptions.DispenserJamException()
     }
 
+    if (requestedGram > availableGram) {
+        throw FeederExceptions.FoodEmptyException(
+            requested = requestedGram,
+            available = availableGram,
+        )
+    }
+
+    println("Kibble berhasil dikeluarkan!")
+
     return availableGram - requestedGram
 }
