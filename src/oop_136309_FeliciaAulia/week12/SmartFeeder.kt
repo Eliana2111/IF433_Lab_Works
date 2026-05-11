@@ -5,5 +5,9 @@ fun dispenseKibble(requestedGram: Int, availableGram: Int, isJammed: Boolean): I
         "Porsi kibble haris lebih dari 0 gr"
     }
 
+    if (isJammed){
+        throw FeederExceptions.DispenserJamException()
+    }
+
     return availableGram - requestedGram
 }
