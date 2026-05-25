@@ -11,3 +11,4 @@ class SafeRectangle(var width: Int, var height: Int) : Shape {
 class SafeSquare(var side: Int) : Shape {
     override fun area() = side * side
 }
+
